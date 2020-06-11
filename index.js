@@ -21,7 +21,8 @@ client.on('guildMemberAdd', member =>{
 
 client.on('message', message =>{
  
-    }.listen(process.env.PORT || 5000)
+    }import os
+port = int(os.environ.get(“PORT”, 5000))
 )
 
 
