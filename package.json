@@ -1,4 +1,9 @@
+
 {
+    const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
   "name": "con-bot",
   "version": "1.0.0",
   "description": "",
@@ -13,3 +18,4 @@
     
   }
 }
+
