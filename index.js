@@ -1,7 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-import os
-port = int(os.environ.get(“PORT”, 5000))
 
 const token = process.env.token;
 
