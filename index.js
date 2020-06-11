@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-.listen(process.env.PORT, '0.0.0.0');
+listen(process.env.PORT, '0.0.0.0');
 const token = process.env.token;
 
 client.login(token);
