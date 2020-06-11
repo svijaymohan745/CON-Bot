@@ -1,4 +1,7 @@
 {
+  "scripts": {
+  "start": "node index.js"
+}
   "name": "con-bot",
   "version": "1.0.0",
   "description": "",
@@ -10,9 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.2.0"
-    "scripts": {
-  "start": "node index.js"
-}
     
   }
 }
