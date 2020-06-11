@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const PORT = process.env.PORT || 5000;
 
 const token = process.env.token;
 
@@ -22,7 +21,7 @@ client.on('guildMemberAdd', member =>{
 
 client.on('message', message =>{
  
-    }.listen(5000);
+    }.listen(process.env.PORT || 5000)
 )
 
 
