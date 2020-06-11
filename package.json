@@ -1,7 +1,4 @@
 {
-  "scripts": {
-  "start": "node index.js"
-}
   "name": "con-bot",
   "version": "1.0.0",
   "description": "",
