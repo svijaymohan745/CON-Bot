@@ -1,4 +1,8 @@
 {
+  "scripts": {
+  "start": "node index.js",
+  "build": "webpack"
+  }
   "name": "con-bot",
   "version": "1.0.0",
   "description": "",
