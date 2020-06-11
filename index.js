@@ -1,7 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const PORT = process.env.PORT || 5001;
-app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 const token = process.env.token;
 
 client.login(token);
