@@ -10,7 +10,7 @@ client.on('ready', () => {
 })
 
 client.on('guildMemberAdd', member => {
-   const embed = {
+     const embed = {
     "title": "Welcome To Committee Of Noobs",
     "description": "Hello Peeps, Welcome to CON!",
     "color": 831018,
@@ -42,6 +42,8 @@ client.on('guildMemberAdd', member => {
     ]
   };
  member.send({embed});
+},
+ 
 client.on('guildMemberAdd', member =>{
 
     const channel = member.guild.channels.cache.find(channel => channel.name === "👥people-incoming");
