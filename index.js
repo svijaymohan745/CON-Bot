@@ -10,7 +10,7 @@ client.on('ready', () => {
 })
 
 client.on('guildMemberAdd', member => {
-   member.send("Welcome to the server!");
+   member.send("Hello Peeps, Welcome to Committee of Noobs! For diving into the different games you love in the channel, Get your Roles by Going to <#716551185431265331>. New to Discord ?, check out <#717339670974824519> to see how its done. Feel free to ping any of the admins for any kind of stuff. Join a voice channel, listen to some music and ofcourse - Go Pwn Some Noobs! :D");
 });
 
 client.on('guildMemberAdd', member =>{
