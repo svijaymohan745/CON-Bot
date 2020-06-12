@@ -8,9 +8,8 @@ client.login(token);
 client.on('ready', () => {
     console.log('Welcome me into this nasty World');
 })
-
 client.on('guildMemberAdd', member => {
-     const embed = {
+  const embed = {
     "title": "Welcome To Committee Of Noobs",
     "description": "Hello Peeps, Welcome to CON!",
     "color": 831018,
@@ -43,7 +42,6 @@ client.on('guildMemberAdd', member => {
   };
  member.send({embed});
 },
- 
 client.on('guildMemberAdd', member =>{
 
     const channel = member.guild.channels.cache.find(channel => channel.name === "👥people-incoming");
@@ -51,11 +49,9 @@ client.on('guildMemberAdd', member =>{
 
 
     channel.send(`Hey ${member}, welcome to CON! :tada::hugging: ! Head over to <#716551185431265331>  to assign yourself roles and get into the channels :D Good luck, Have fun`)
-});
+}));
 
 client.on('message', message =>{
  
     }
 )
-
-
