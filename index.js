@@ -11,7 +11,7 @@ client.on('ready', () => {
 client.on('guildMemberAdd', member => {
   const embed = {
     "title": "Welcome To Committee Of Noobs",
-    "description": "Hello Peeps, Welcome to CON!",
+    "description": "Hello Peeps, Welcome to the CON server!",
     "color": 831018,
     "thumbnail": {
       "url": "https://i.imgur.com/mGJVLXz.png"
