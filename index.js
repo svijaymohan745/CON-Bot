@@ -9,6 +9,10 @@ client.on('ready', () => {
     console.log('Welcome me into this nasty World');
 })
 
+bot.on('guildMemberAdd', member => {
+   member.send("Welcome to the server!");
+});
+
 client.on('guildMemberAdd', member =>{
 
     const channel = member.guild.channels.cache.find(channel => channel.name === "👥people-incoming");
