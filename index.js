@@ -8,6 +8,10 @@ client.login(token);
 client.on('ready', () => {
     console.log('Welcome me into this nasty World');
 })
+client.on("guildMemberAdd", member => {
+    member.send("Welcome")
+        .catch(console.error);
+});
 
 client.on('guildMemberAdd', member =>{
 
