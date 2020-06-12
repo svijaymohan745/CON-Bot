@@ -30,12 +30,12 @@ client.on('guildMemberAdd', member => {
       },
       {
         "name": "🤖",
-        "value": "Join a voice channel, listen to",
+        "value": "Join a voice channel, talk about",
         "inline": true
       },
       {
         "name": "💪",
-        "value": "music and ofc Go Pwn Some Noobs!",
+        "value": "memes and ofc Go Pwn Some Noobs!",
         "inline": true
       }
     ]
