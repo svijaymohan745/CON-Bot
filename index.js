@@ -22,7 +22,7 @@ client.on('guildMemberAdd', member => {
     "fields": [
       {
         "name": "💣",
-        "value": " For diving into the different games you love in the channel, Get your Roles by Going to <#716551185431265331>."
+        "value": " Before diving into the different games you love in the server, get your Roles first by Going to <#716551185431265331>."
       },
       {
         "name": "🎮",
