@@ -10,9 +10,38 @@ client.on('ready', () => {
 })
 
 client.on('guildMemberAdd', member => {
-   member.send("Hello Peeps, Welcome to Committee of Noobs! For diving into the different games you love in the channel, Get your Roles by Going to <#716551185431265331>. New to Discord ?, check out <#717339670974824519> to see how its done. Feel free to ping any of the admins for any kind of stuff. Join a voice channel, listen to some music and ofcourse - Go Pwn Some Noobs! :D");
-});
-
+   const embed = {
+    "title": "Welcome To Committee Of Noobs",
+    "description": "Hello Peeps, Welcome to CON!",
+    "color": 831018,
+    "thumbnail": {
+      "url": "https://i.imgur.com/mGJVLXz.png"
+    },
+    "image": {
+      "url": "https://i.imgur.com/Ckzaw3t.png"
+    },
+    "fields": [
+      {
+        "name": "💣",
+        "value": " For diving into the different games you love in the channel, Get your Roles by Going to <#716551185431265331>."
+      },
+      {
+        "name": "🎮",
+        "value": "New to Discord ?, check out <#717339670974824519> to see how its done. Feel free to ping any of the admins for any kind of stuff."
+      },
+      {
+        "name": "🤖",
+        "value": "Join a voice channel, listen to",
+        "inline": true
+      },
+      {
+        "name": "💪",
+        "value": "music and ofc Go Pwn Some Noobs!",
+        "inline": true
+      }
+    ]
+  };
+ member.send({embed});
 client.on('guildMemberAdd', member =>{
 
     const channel = member.guild.channels.cache.find(channel => channel.name === "👥people-incoming");
