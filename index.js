@@ -9,7 +9,7 @@ client.on('ready', () => {
     console.log('Welcome me into this nasty World');
 })
 
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
    member.send("Welcome to the server!");
 });
 
