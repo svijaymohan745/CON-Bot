@@ -6,7 +6,12 @@ client.login(token);
 
 
 client.on('ready', () => {
-    console.log('Welcome me into this nasty World');
+  var testChannel = client.channels.cache.find(channel => channel.id === '716557043628245025');
+  console.log('Welcome me into this nasty World');
+
+setInterval(() => {
+  testChannel.send("Just sending some love");
+}, 5000);
 })
 client.on('guildMemberAdd', member => {
   const embed = {
