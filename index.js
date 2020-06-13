@@ -6,7 +6,7 @@ client.login(token);
 
 
 client.on('ready', () => {
-  var testChannel = client.channels.cache.find(channel => channel.id === '716557043628245025');
+  var testChannel = client.channels.cache.find(channel => channel.id === '7165570431628245025');
   console.log('Welcome me into this nasty World');
 
 setInterval(() => {
