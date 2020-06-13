@@ -18,7 +18,7 @@ client.login(token);
    
    client.on("message", async message => {
     if (message.content == "_meme"){
-       const subReddits = ["dankmeme", "dankmemes","memes", "meme", "jokes", "joke", "me_irl"];
+       const subReddits = ["dankmeme", "dankmemes","memes", "meme", "me_irl"];
        const random = subReddits[Math.floor(Math.random() * subReddits.length)];
    
        const img = await randomPuppy(`${random}`);
