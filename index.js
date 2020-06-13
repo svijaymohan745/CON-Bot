@@ -6,12 +6,7 @@ client.login(token);
 
 
 client.on('ready', () => {
-  var testChannel = client.channels.cache.find(channel => channel.id === '716557043628245025');
-  console.log('Welcome me into this nasty World');
-
-setInterval(() => {
-  testChannel.send("Just dropping in Some Love");
-}, 5000);
+    console.log('Welcome me into this nasty World');
 })
 client.on('guildMemberAdd', member => {
   const embed = {
@@ -27,7 +22,7 @@ client.on('guildMemberAdd', member => {
     "fields": [
       {
         "name": "💣",
-        "value": "Before diving into the different games you love in the server, get your Roles first by Going to <#716551185431265331>."
+        "value": " Before diving into the different games you love in the server, get your Roles first by Going to <#716551185431265331>."
       },
       {
         "name": "🎮",
