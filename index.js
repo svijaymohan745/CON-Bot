@@ -11,7 +11,7 @@ client.on('ready', () => {
 
 setInterval(() => {
   testChannel.send("Hey there humans, make sure you spam those contracts till there is none left. <:hi:716321862661177404>");
-}, 5000);
+}, 604800000);
 })
 client.on('guildMemberAdd', member => {
   const embed = {
