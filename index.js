@@ -10,7 +10,7 @@ client.on('ready', () => {
   console.log('Welcome me into this nasty World');
 
 setInterval(() => {
-  testChannel.send("Hey there humans, make sure you spam those contracts till there is none left. :hi:");
+  testChannel.send("Hey there humans, make sure you spam those contracts till there is none left. <:hi:716321862661177404>");
 }, 5000);
 })
 client.on('guildMemberAdd', member => {
