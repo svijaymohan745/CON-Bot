@@ -9,7 +9,7 @@ This is a discord bot coded using JavaScript and the discord.js module
 3. Timed messages
 4. Meme Retrieval from subreddits
 
-###Files
+### Files
 
 1. index.js - Main file containing the code for the bot
 2. Procfile - Tells the hosting server "Heroku" how to run the bot
