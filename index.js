@@ -7,16 +7,52 @@ const { MessageEmbed } = require ("discord.js");
 const randomPuppy = require("random-puppy");
 const { RichEmbed } = require("discord.js");
 
+const PREFIX = '_';
+
 
 client.login(token);
 
 client.commands = new Collection
 client.aliases = new Collection();
 
-["command"].forEach(handler => {
-  require(`./handler/${handler}`)(client);
-  
-});
+
+client.on('message', msg=>{
+    
+  let args = msg.content.substring(PREFIX.length).split(" ");
+
+  switch(args[0]){
+          
+      case 'test':
+        case 'test':
+          msg.channel.send({embed: {
+              color: 3447003,
+              author: {
+                name: client.user.username,
+                icon_url: client.user.avatarURL
+              },
+              "title": "Help Commands",
+              "description": "All the Commands that this amazing bot can do :D",
+           
+              "fields": [
+                {
+                  "name": "Meme Command",
+                  "value": "_meme"
+                },
+                {
+                  "name": "**Help Command(You are looking right at it**",
+                  "value": "_help "
+                },
+                {
+                  "name": "More Features Comming Soon",
+                  "value": "Stay Tuned"
+                }
+            
+                
+              ]
+            }
+          });
+  }
+})
 
 module.exports = {
   name: "meme",
