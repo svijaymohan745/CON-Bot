@@ -22,8 +22,7 @@ client.on('message', msg=>{
 
   switch(args[0]){
           
-      case 'test':
-        case 'test':
+        case 'help':
           msg.channel.send({embed: {
               color: 3447003,
               author: {
@@ -39,7 +38,7 @@ client.on('message', msg=>{
                   "value": "_meme"
                 },
                 {
-                  "name": "**Help Command(You are looking right at it**",
+                  "name": "**Help Command(You are looking right at it**)",
                   "value": "_help "
                 },
                 {
