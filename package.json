@@ -9,6 +9,7 @@
   "author": "HulkSmash",
   "license": "ISC",
   "dependencies": {
+    "ascii-table": "0.0.9",
     "discord.js": "^12.2.0",
     "random-puppy": "^1.1.0"
   }

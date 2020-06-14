@@ -1,37 +1,23 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.env.token;
+const fs = require("fs");
+const { Collection } = require("discord.js");
 const { MessageEmbed } = require ("discord.js");
 const randomPuppy = require("random-puppy");
+const { RichEmbed } = require("discord.js");
 
 
 client.login(token);
 
+client.commands = new Collection
+client.aliases = new Collection();
 
+["command"].forEach(handler => {
+  require(`./handler/${handler}`)(client);
   
-   module.exports = {
-       name: "memes",
-       category: "Epic Memes",
-       description: "Sends the best memes on the planet",
-   }
+});
 
-   
-   client.on("message", async message => {
-    if (message.content == "_meme"){
-       const subReddits = ["dankmeme", "dankmemes","memes", "meme", "me_irl"];
-       const random = subReddits[Math.floor(Math.random() * subReddits.length)];
-   
-       const img = await randomPuppy(`${random}`);
-     
-       const embed = new MessageEmbed()
-       .setColor("RANDOM")
-       .setImage(img)
-       .setTitle(`From /r/${random}`)
-       .setURL(`https://www.reddit.com/r/${random}`);
-
-       message.channel.send(embed)
-
-    }})
 
 client.on('ready', () => {
   var testChannel = client.channels.cache.find(channel => channel.id === '716557043628245025');
