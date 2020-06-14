@@ -34,7 +34,7 @@ client.on('message', msg=>{
            
               "fields": [
                 {
-                  "name": "Meme Command",
+                  "name": "**Meme Command**",
                   "value": "_meme"
                 },
                 {
@@ -42,7 +42,7 @@ client.on('message', msg=>{
                   "value": "_help "
                 },
                 {
-                  "name": "More Features Comming Soon",
+                  "name": "**More Features Comming Soon**",
                   "value": "Stay Tuned"
                 }
             
