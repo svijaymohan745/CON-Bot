@@ -30,7 +30,7 @@ client.on('message', msg=>{
                 icon_url: client.user.avatarURL
               },
               "title": "Help Commands",
-              "description": "All the Commands that this amazing bot can do :D",
+              "description": "All the Commands that this amazing bot can do <:pog:716321868528877599>",
            
               "fields": [
                 {
