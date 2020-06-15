@@ -8,12 +8,14 @@ This is a discord bot coded using JavaScript and the discord.js module
 2. Server Greeting
 3. Timed messages
 4. Meme Retrieval from subreddits
+5. Economy features (Coins, Exp)
 
 ### Files
 
 1. index.js - Main file containing the code for the bot
 2. Procfile - Tells the hosting server "Heroku" how to run the bot
 3. Package.json - The main info about the bot
+4. Commands Folder - Command Handler related files detached from the main intex.js file
 
 
 ### Setting up
