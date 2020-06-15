@@ -67,7 +67,9 @@ bot.on("message", async message => {
   .setColor("#0000FF")
   .addField("<:CONcoin:719543153107009558>", `${coinAmt} coins added!`);
 
-  message.channel.send(coinEmbed).then(msg => {msg.delete(5000)});
+  message.channel.send(coinEmbed).then(msg => {
+    msg.delete({ timeout: 10000 })
+  })
   }
 
   let xpAdd = Math.floor(Math.random() * 7) + 8;
