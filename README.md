@@ -26,3 +26,6 @@ This is a discord bot coded using JavaScript and the discord.js module
 
 References
  \[1\] [CodeLyon](https://www.youtube.com/channel/UC08G-UJT58SbkdmcOYyOQVw)
+ \[2\] [Discord.js.org](https://discord.js.org/)
+
+ 
