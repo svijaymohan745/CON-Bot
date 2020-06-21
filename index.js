@@ -62,8 +62,18 @@ bot.on('message', msg=>{
                 },
                 {
                   "name": "**Levels - Check your Server Level**",
-                  "value": "_level"
-                }
+                  "value": "_rank"
+                },
+                {
+                  "name": "**Check another guy's rank**",
+                  "value": "_rank @username"
+
+                },
+                {
+                  "name": "**Server Leaderboards**",
+                  "value": "_leaderboard"
+
+                },
             
                 
               ]
