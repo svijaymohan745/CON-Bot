@@ -57,10 +57,6 @@ bot.on('message', msg=>{
                   "value": "_help "
                 },
                 {
-                  "name": "**Coins - Check the number of Coins You have**",
-                  "value": "_coins"
-                },
-                {
                   "name": "**Levels - Check your Server Level**",
                   "value": "_rank"
                 },
