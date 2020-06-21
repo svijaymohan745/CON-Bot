@@ -74,6 +74,11 @@ bot.on('message', msg=>{
                   "value": "_leaderboard"
 
                 },
+                {
+                  "name": "**Ping Command**",
+                  "value": "_ping"
+
+                },
             
                 
               ]
