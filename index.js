@@ -1,6 +1,7 @@
 const botconfig = require("./botconfig.json");
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const client = new Discord.Client();
 const token = process.env.token;
 const fs = require("fs");
 bot.commands = new Discord.Collection();
@@ -130,9 +131,9 @@ setInterval(() => {
 }, 950400000);
  
 })
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
 
-  bot.guilds.cache.get("424978571757617162");
+  client.guilds.cache.get("424978571757617162");
   const embed = {
     "title": "Welcome To Committee Of Noobs",
     "description": "Hello Peeps, Welcome to the CON server!",
