@@ -131,6 +131,8 @@ setInterval(() => {
  
 })
 bot.on('guildMemberAdd', member => {
+
+  bot.guilds.cache.get("424978571757617162");
   const embed = {
     "title": "Welcome To Committee Of Noobs",
     "description": "Hello Peeps, Welcome to the CON server!",
