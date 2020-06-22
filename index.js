@@ -79,6 +79,16 @@ bot.on('message', message =>{
  
     }
 )
+bot.on('guildMemberAdd', member =>{
+  var guild = member.guild;
+
+  const channel = member.guild.channels.cache.find(channel => channel.name === "general");
+  if(!channel) return;
+
+  if (guild.id == "724450171102036099")
+  channel.send(`Hey ${member}, welcome to the Group!!! :tada::hugging: ! Head over to <#724575687851114557>  to read the rules and bask on the discussions, memes and spam that we have :D`)
+});
+
 
 bot.on('message', msg=>{
     
