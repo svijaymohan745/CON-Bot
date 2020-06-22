@@ -30,7 +30,55 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.login(token);
 
+bot.on("guildMemberAdd", guildMember => {
+   var guild = guildMember.guild;
+  const embed = {
+    "title": "Welcome To Committee Of Noobs",
+    "description": "Hello Peeps, Welcome to the CON server!",
+    "color": 831018,
+    "thumbnail": {
+      "url": "https://i.imgur.com/mGJVLXz.png"
+    },
+    "image": {
+      "url": "https://i.imgur.com/Ckzaw3t.png"
+    },
+    "fields": [
+      {
+        "name": "💣",
+        "value": " Before diving into the different games you love in the server, get your Roles first by Going to <#716551185431265331>."
+      },
+      {
+        "name": "🎮",
+        "value": "New to Discord ?, check out <#717339670974824519> to see how its done. Feel free to ping any of the admins for any kind of stuff."
+      },
+      {
+        "name": "🤖",
+        "value": "Join a voice channel, talk about",
+        "inline": true
+      },
+      {
+        "name": "💪",
+        "value": "memes and ofc Go Pwn Some Noobs!",
+        "inline": true
+      }
+    ]
+  };
+  if (guild.id == "424978571757617162")
+      guildMember.send({embed});
+},
+bot.on('guildMemberAdd', member =>{
 
+    const channel = member.guild.channels.cache.find(channel => channel.name === "👥people-incoming");
+    if(!channel) return;
+
+
+    channel.send(`Hey ${member}, welcome to CON! :tada::hugging: ! Head over to <#716551185431265331>  to assign yourself roles and get into the channels :D Good luck, Have fun`)
+}));
+
+bot.on('message', message =>{
+ 
+    }
+)
 
 bot.on('message', msg=>{
     
@@ -131,52 +179,4 @@ setInterval(() => {
 }, 950400000);
  
 })
-client.on('guildMemberAdd', member => {
 
-  client.guilds.cache.get("424978571757617162");
-  const embed = {
-    "title": "Welcome To Committee Of Noobs",
-    "description": "Hello Peeps, Welcome to the CON server!",
-    "color": 831018,
-    "thumbnail": {
-      "url": "https://i.imgur.com/mGJVLXz.png"
-    },
-    "image": {
-      "url": "https://i.imgur.com/Ckzaw3t.png"
-    },
-    "fields": [
-      {
-        "name": "💣",
-        "value": " Before diving into the different games you love in the server, get your Roles first by Going to <#716551185431265331>."
-      },
-      {
-        "name": "🎮",
-        "value": "New to Discord ?, check out <#717339670974824519> to see how its done. Feel free to ping any of the admins for any kind of stuff."
-      },
-      {
-        "name": "🤖",
-        "value": "Join a voice channel, talk about",
-        "inline": true
-      },
-      {
-        "name": "💪",
-        "value": "memes and ofc Go Pwn Some Noobs!",
-        "inline": true
-      }
-    ]
-  };
- member.send({embed});
-},
-bot.on('guildMemberAdd', member =>{
-
-    const channel = member.guild.channels.cache.find(channel => channel.name === "👥people-incoming");
-    if(!channel) return;
-
-
-    channel.send(`Hey ${member}, welcome to CON! :tada::hugging: ! Head over to <#716551185431265331>  to assign yourself roles and get into the channels :D Good luck, Have fun`)
-}));
-
-bot.on('message', message =>{
- 
-    }
-)
