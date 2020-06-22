@@ -82,7 +82,7 @@ bot.on('message', message =>{
 bot.on('guildMemberAdd', member =>{
   var guild = member.guild;
 
-  const channel = member.guild.channels.cache.find(channel => channel.name === "general");
+  const channel = member.guild.channels.cache.find(channel => channel.name === "welcome");
   if(!channel) return;
 
   if (guild.id == "724450171102036099")
