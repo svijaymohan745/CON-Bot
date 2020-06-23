@@ -120,7 +120,7 @@ bot.on('guildMemberAdd', member =>{
   if(!channel) return;
 
   if (guild.id == "724450171102036099")
-  channel.send(`Hey ${member}, welcome to our server!!! :tada::hugging: ! Head over to <#724575687851114557> first, <#724846286830043170> is always there if are new to discord. Then head over to any of the text channels you like, read, talk, discuss memes and spam all the things that we have!!`)
+  channel.send(`Hey ${member}, welcome to our server!!! :tada::hugging: ! Head over to <#725079890004672522> to get yourself roles to gain access to the channels, <#724846286830043170> is always there if are new to discord. Then go right ahead to your favorite channels and start exploring!!`)
 });
 
 
