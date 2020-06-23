@@ -66,6 +66,40 @@ bot.on("guildMemberAdd", guildMember => {
   if (guild.id == "424978571757617162")
       guildMember.send({embed});
 },
+bot.on("guildMemberAdd", guildMember => {
+  var guild = guildMember.guild;
+ const embed = {
+   "title": "Welcome To MBA 19-21",
+   "description": "Hi there, welcome to our batch group. Discord is a place where you can find integration on anything and everything.",
+   "color": 831018,
+   "image": {
+     "url": "https://i.imgur.com/eTD9rMJ.jpg"
+   },
+   "fields": [
+     {
+       "name": "👦🏻 👧🏻",
+       "value": " Head over to <#724575687851114557> to read the rules of our beloved server"
+     },
+     {
+       "name": "🎧",
+       "value": "New to Discord ?, check out <#724846286830043170> to see how its done. Do text in the server if need help at anything inside discord."
+     },
+     {
+       "name": "🤖",
+       "value": "Join a voice channel, talk about",
+       "inline": true
+     },
+     {
+       "name": "💪",
+       "value": "memes and check out our plethora of discussions",
+       "inline": true
+     }
+   ]
+ };
+ if (guild.id == "724450171102036099")
+     guildMember.send({embed});
+},
+
 bot.on('guildMemberAdd', member =>{
 
     const channel = member.guild.channels.cache.find(channel => channel.name === "👥people-incoming");
@@ -73,7 +107,7 @@ bot.on('guildMemberAdd', member =>{
 
 
     channel.send(`Hey ${member}, welcome to CON! :tada::hugging: ! Head over to <#716551185431265331>  to assign yourself roles and get into the channels :D Good luck, Have fun`)
-}));
+})));
 
 bot.on('message', message =>{
  
@@ -86,7 +120,7 @@ bot.on('guildMemberAdd', member =>{
   if(!channel) return;
 
   if (guild.id == "724450171102036099")
-  channel.send(`Hey ${member}, welcome to the Group!!! :tada::hugging: ! Head over to <#724575687851114557>  to read the rules and bask on the discussions, memes and spam that we have :D`)
+  channel.send(`Hey ${member}, welcome to our server!!! :tada::hugging: ! Head over to <#724575687851114557> first, <#724846286830043170> is always there if are new to discord. Then head over to any of the text channels you like, read, talk, discuss memes and spam all the things that we have!!`)
 });
 
 
