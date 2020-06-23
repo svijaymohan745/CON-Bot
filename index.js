@@ -78,7 +78,7 @@ bot.on("guildMemberAdd", guildMember => {
    "fields": [
      {
        "name": "👦🏻 👧🏻",
-       "value": " Head over to <#724575687851114557> to read the rules of our beloved server"
+       "value": " Head over to <#725079890004672522> get your roles to gain access to your desired channels"
      },
      {
        "name": "🎧",
